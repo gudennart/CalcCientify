@@ -15,6 +15,13 @@ public class ConsumirWS {
         BaseInterfaceWS receptorCliente=service.getPort(BaseInterfaceWS.class);
         
         System.out.println(receptorCliente.getServico("Somar",2,3));
+        
+        System.out.println(receptorCliente.getServico("Subtracao",3,2));
+        
+        System.out.println(receptorCliente.getServico("Raiz",16,0));
+        
+        System.out.println(receptorCliente.getServico("Cosseno",90,0));
+        
         System.out.println(receptorCliente.getCatalogo());
         
     }
